@@ -1,0 +1,77 @@
+.card{
+    margin-top: 50px;
+    display: flex;
+    width: 650px;
+    height: 430px; 
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.card-right h5{
+    font-size: 22px;
+}
+
+.card-right img{
+    width:300px;
+    height:300px;
+
+}
+
+.card-left{
+  position: relative;
+    margin-top: 70px;
+    margin-left: 40px;
+   
+}
+
+.card-left span{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.totalPrice{
+    position: absolute;
+    bottom: 100px;
+    margin-left: 10px;
+    display: flex;
+}
+.number{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.amount{
+    font-size: 20px;
+    
+}
+.delete{
+    cursor: pointer;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px){
+    /* .mainCard{
+        width: 80%;
+    } */
+    .card{
+        width: 70%;
+        height: 430px; 
+     
+    }
+    .card-right img{
+        width:210px;
+        height:230px;
+    
+    }
+    
+    
+
+}
