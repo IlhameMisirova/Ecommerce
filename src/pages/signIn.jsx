@@ -44,7 +44,6 @@ function SignIn() {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
       });
-      console.log(response);
       navigate("/");
       dispatch(entryData(response?.data?.data?.user?.fullname));
     } catch (error) {

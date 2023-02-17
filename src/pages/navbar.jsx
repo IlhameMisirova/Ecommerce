@@ -12,7 +12,6 @@ const Navbar = () => {
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const entryName = useSelector((state) => state.cart.entryName);
   const dispatch = useDispatch();
-  console.log(entryName);
   return (
     <div className="nav_main">
       <div className="nav">
@@ -37,9 +36,6 @@ const Navbar = () => {
               {entryName}
             </div>
           }
-          {/* <Link to={"/signin"}>
-              <PersonOutlineIcon sx={{ fontSize: 35 }} className="icon" />
-            </Link> */}
           <Link to={"/bag"}>
             <ShoppingBagIcon sx={{ fontSize: 35 }} className="icon" />{" "}
             <span className="quantity">{totalQuantity}</span>

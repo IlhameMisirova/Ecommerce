@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { basicSchema } from "../schema";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 import axios from "axios";
 
 function SignUp() {
@@ -20,7 +19,6 @@ function SignUp() {
     resolver: yupResolver(basicSchema),
   });
   const navigate = useNavigate();
-  const dispatch = useDispatch();
   const onSubmitHandler = async (data) => {
     await axios
       .post("https://minecard.az/api/moonsun/register", data)
@@ -36,7 +34,6 @@ function SignUp() {
           setMess(" ");
         }, 3000);
       });
-    console.log({ data });
     reset();
   };
   const togglePassword = () => {
