@@ -23,11 +23,11 @@ const Navbar = () => {
         </div>
 
         <div className="icons">
-          {entryName === "" ? (
+          {entryName === "" ? 
             <Link to={"/signin"}>
               <PersonOutlineIcon sx={{ fontSize: 35 }} className="icon" />
             </Link>
-          ) : (
+          : 
             <div
               className="name"
               onClick={() => {
@@ -36,8 +36,10 @@ const Navbar = () => {
             >
               {entryName}
             </div>
-          )}
-
+          }
+          {/* <Link to={"/signin"}>
+              <PersonOutlineIcon sx={{ fontSize: 35 }} className="icon" />
+            </Link> */}
           <Link to={"/bag"}>
             <ShoppingBagIcon sx={{ fontSize: 35 }} className="icon" />{" "}
             <span className="quantity">{totalQuantity}</span>
